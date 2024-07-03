@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Credit Card Template Tailwind CSS</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main class="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-tr from-red-500 to-red-100">
+			<!-- Title -->
+			<header class="flex justify-center items-center py-12">
+				<h1 class="hidden">Credit Card Template with <span>Tailwind CSS</span></h1>
+				<h2 class="text-3xl text-gray-700 font-bold font-serif">Hover me!</h2>
+			</header>
+
+			<!-- Card Credit -->
+			<article
+				class="group duration-[.6s] [transform-style: preserve-3d]"
+				style="transition: 0.6s; transform-style: preserve-3d"
+			>
+				<figure
+					class="relative w-96 h-60 rounded-2xl font-mono text-white overflow-hidden cursor-pointer group:hover:rotate-y-[180deg] transition-all duration-500"
+				>
+					<!-- Front content -->
+					<section
+						class="absolute top-0 left-0 w-full h-full flex flex-col justify-center gap-6 p-6 bg-gradient-to-tr from-gray-900 to-gray-700 transition-all duration-100 delay-200 z-20"
+						style="transform: rotateY(0deg)"
+					>
+						<div class="flex justify-between items-center">
+							<img
+								src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png"
+								alt="Smart card"
+								class="w-12"
+							/>
+
+							<img
+								src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
+								alt="Visa image"
+								class="w-12"
+							/>
+						</div>
+
+						<!-- CardNumber -->
+						<div class="">
+							<label for="" class="hidden">Card Number</label>
+							<input
+								type="text"
+								id=""
+								value="**** **** **** ****"
+								readonly
+								class="outline-none w-full bg-transparent text-center text-2xl"
+							/>
+						</div>
+
+						<div class="w-full flex flex-row justify-between">
+							<div class="w-full flex flex-col">
+								<label for="">Card holder</label>
+								<input
+									type="text"
+									id=""
+									value="Daniel Castillo Guindos"
+									readonly
+									class="outline-none bg-transparent"
+								/>
+							</div>
+
+							<div class="w-1/4 flex flex-col">
+								<label for="">Expires</label>
+								<input type="text" id="" value="12/34" readonly class="outline-none bg-transparent" />
+							</div>
+						</div>
+					</section>
+
+					<!-- Back Content -->
+					<section></section>
+				</figure>
+
+				<!-- Front content -->
+				<div
+					class="absolute top-0 left-0 w-full h-full flex flex-col justify-center gap-6 p-6 bg-gradient-to-tr from-gray-900 to-gray-700 transition-all duration-100 delay-200 z-20"
+					style="transform: rotateY(0deg)"
+				>
+					<div class="flex justify-between items-center">
+						<img
+							src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png"
+							alt="Smart card"
+							class="w-12"
+						/>
+
+						<img
+							src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
+							alt="Visa image"
+							class="w-12"
+						/>
+					</div>
+
+					<!-- CardNumber -->
+					<div class="">
+						<label for="" class="hidden">Card Number</label>
+						<input
+							type="text"
+							id=""
+							value="**** **** **** ****"
+							readonly
+							class="outline-none w-full bg-transparent text-center text-2xl"
+						/>
+					</div>
+
+					<div class="w-full flex flex-row justify-between">
+						<div class="w-full flex flex-col">
+							<label for="">Card holder</label>
+							<input
+								type="text"
+								id=""
+								value="Daniel Castillo Guindos"
+								readonly
+								class="outline-none bg-transparent"
+							/>
+						</div>
+
+						<div class="w-1/4 flex flex-col">
+							<label for="">Expires</label>
+							<input type="text" id="" value="12/34" readonly class="outline-none bg-transparent" />
+						</div>
+					</div>
+				</div>
+
+				<!-- Back content -->
+				<div
+					class="absolute top-0 left-0 w-full h-full flex flex-col gap-3 justify-center bg-gradient-to-tr from-gray-900 to-gray-700 transition-all z-10"
+					style="transform: rotateY(180deg)"
+				>
+					<!-- Band -->
+					<div class="w-full h-12 bg-black"></div>
+
+					<div class="px-6 flex flex-col gap-6 justify-center">
+						<div class="flex flex-col items-end">
+							<label for="">CVV</label>
+							<input
+								type="text"
+								id=""
+								value="123"
+								readonly
+								class="outline-none rounded text-black w-full h-8 text-right"
+								style="
+									background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+								"
+							/>
+						</div>
+
+						<div class="flex justify-start items-center">
+							<img
+								src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
+								alt=""
+								class="w-12"
+							/>
+						</div>
+					</div>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
